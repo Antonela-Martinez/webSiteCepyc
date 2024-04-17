@@ -1,0 +1,12 @@
+# Ignorar todos los archivos dentro de la carpeta bootstrap menos la carpeta en si
+/css/*
+
+# Excepto tu archivo CSS específico dentro de la carpeta de Bootstrap
+!/css/main.css
+!/css/bootstrap.min.css
+
+# Ignorar todos los archivos dentro de la carpeta bootstrap menos la carpeta en si
+/js/*
+
+!/js/bootstrap.bundle.min.js
+
