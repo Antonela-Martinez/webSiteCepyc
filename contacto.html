@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contacto</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="icon" href="img/logo.jpg">
+    </head>
+    <body class="bg-body-tertiary">
+
+        <!--ENCABEZADO-->
+        <header class="p-3 container-fluid bg-secondary d-flex justify-content-end" id="encabezado">
+            <p class="text-light mb-0 mx-5 p-2 fs-5 text-end">Contactanos +549 2236 785432</p>
+        </header>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-4" id="menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="text-secondary fs-5 fw-bold">Cepyc</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        <!--FORMULARIO-->
+
+        <main>
+            <div class="container text-bold d-flex justify-content-center  ">
+            <div col="row ">
+                <div class="col mb-3">
+                    <form  action="mailto:martinezantonela36@gmail.com" autocomplete="on">
+                            
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreapellido" class="input-padron " required>
+
+                        <label for="correoelectronico">Correo Electrónico</label>
+                        <input type="email" id="correoelectronico" class="input-padron " required placeholder="email@dominio.com">
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" class="input-padron " required placeholder="(XX) XXXX XXXX">
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea  id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+                        <fieldset>
+                            <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                            <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="Teléfono" id="radio-telefono">Teléfono</label>
+                            
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>   
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>¿En cuál horario prefiere ser atendido?</legend>
+                            <select>
+                                <option>Mañana</option>
+                                <option>Tarde</option>
+                            </select>
+                        </fieldset>
+
+                        <label><input type="checkbox" class="checkbox" checked>¿Le gustaria recibir novedades de Cepyc?</label>
+                        
+                        <button type="submit"  class="enviar ">Enviar formulario</button>
+
+                    </form>
+                </div>
+
+            </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-secondary">
+            <div>
+                <img src="img/logo.jpg" alt="logo" width="140" height="120">
+            </div>
+            <p class="copyright">&copy Copyright Cepyc - 2023</p>
+        </footer>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
